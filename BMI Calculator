@@ -1,0 +1,23 @@
+#BMI Calculator
+name =input(' Enter your name')
+weight = int(input("Enter your weight in pounds: "))
+height = int(input("Enter your height in inches: "))
+BMI = (weight *703)/(height * height)
+print(BMI)
+if  BMI>0:
+    if(BMI<16):
+         print(name +',you are Severe Thinness')
+    elif (BMI<= 18.5):
+         print(name +',you are Mild Thinness')
+    elif (BMI<= 25):
+         print(name +', you are Normal')
+    elif (BMI<= 30):
+         print(name +',you are Overweight')
+    elif (BMI<= 35):
+         print(name +',you are Obese Class I')
+    elif (BMI<= 40):
+         print(name +',you are Obese Class II')
+    elif (BMI> 40):
+        print( name +',you are Obese Class II')
+    else:
+         print('Enter valid inputs')
